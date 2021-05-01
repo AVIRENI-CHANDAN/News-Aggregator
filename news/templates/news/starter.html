@@ -1,0 +1,39 @@
+{% extends "news/base1.html" %}
+{% load static %}
+{% block content %}
+
+<style type="text/css">
+    *{
+        overflow:hidden;
+    }
+    .projectTitle{
+        color:white;
+        position:absolute;
+        top:70%;
+        left:50%;
+        transform:translateX(-50%);
+        font-weight: bolder;
+        font-family: "Lucida Console", "Courier New", monospace;
+        font-size:1.5cm;
+        text-align: center;
+        background: rgba(0,0,0,0.45);
+        background-blend-mode: difference;
+        box-shadow: 0 0 2px black, 0 0 5px black, 0 0 8px black, 0 0 12px black, 0 0 16px black;
+        text-transform: uppercase;
+        text-shadow: 0 0 2px white,0 0 3px white;
+        padding: 10px 25px;
+    }
+    video{
+        position:absolute;
+    }
+</style>
+
+<video width="320" height="240" autoplay muted loop style="height:auto;width:100vw;">
+    <source src="{% static 'news/background.mp4'%}" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+<h1 class="projectTitle">News-Aggegator Application</h1>
+<p class="content">News as we get.</p>
+
+              
+{% endblock %}
