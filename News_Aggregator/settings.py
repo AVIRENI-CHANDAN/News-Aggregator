@@ -23,9 +23,10 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'qf**^+4=)%7!!mok#fe)(^^!g6=acul(eq@qq#a_p0!(&4uslv'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+# DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['localhost','57a1f8fa4e0d.ngrok.io','127.0.0.1']
+ALLOWED_HOSTS = ['localhost','kalistark-newsaggregator.herokuapp.com','127.0.0.1']
 
 
 # Application definition
